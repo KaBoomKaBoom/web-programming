@@ -24,9 +24,34 @@ a {
     font-size: 1.2em;
     margin: 20px 0;
 }
+.cta-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between the buttons */
+    margin-top: 20px; /* Margin to move the container lower */
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
 .cta {
     display: inline-block;
     background: #ff6f61;
     padding: 20px 20px;
     border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    flex: 1; /* Ensure buttons have the same size */
+}
+
+/* Unique Value Proposition */
+.value-proposition {
+    background: #000000c5;
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+}
+.value-proposition h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
 }
