@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center top/cover;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0px;
+}
+.hero h1 {
+    font-size: 3em;
+    margin-top: 200px;
+}
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+.cta {
+    display: inline-block;
+    background: #ff6f61;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
