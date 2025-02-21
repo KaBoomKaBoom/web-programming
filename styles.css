@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -80,4 +80,14 @@ a {
 }
 .car-card h3 {
     padding: 10px;
+    font-weight: bold;
+}
+.car-card p {
+    padding: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.car-fleet h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
 }
