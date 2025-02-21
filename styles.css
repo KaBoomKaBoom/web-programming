@@ -24,6 +24,12 @@ a {
     font-size: 1.2em;
     margin: 20px 0;
 }
+.cta-container-single {
+    display: flex;
+    justify-content: center;
+    margin-left: 700px;
+    margin-right: 700px;
+}
 .cta-container {
     display: flex;
     justify-content: center;
