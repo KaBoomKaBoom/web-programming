@@ -124,3 +124,30 @@ blockquote {
     font-weight: bold;
     font-size: 2em;
 }
+/* Contact Us */
+.contact {
+    padding: 50px 20px;
+    background: #f4f4f9;
+    text-align: center;
+}
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.contact input, .contact textarea, .contact button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact button {
+    background: #ff6f61;
+    color: #fff;
+    cursor: pointer;
+}
+.contact h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 2em;
+}
