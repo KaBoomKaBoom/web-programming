@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -23,6 +23,12 @@ a {
 .hero p {
     font-size: 1.2em;
     margin: 20px 0;
+}
+.cta-container-single {
+    display: flex;
+    justify-content: center;
+    margin-left: 700px;
+    margin-right: 700px;
 }
 .cta-container {
     display: flex;
@@ -52,6 +58,36 @@ a {
     color: #fff;
 }
 .value-proposition h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+/* Car Fleet Showcase */
+.car-fleet {
+    padding: 50px 20px;
+    text-align: center;
+}
+.car-card {
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.car-card img {
+    width: 100%;
+}
+.car-card h3 {
+    padding: 10px;
+    font-weight: bold;
+}
+.car-card p {
+    padding: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.car-fleet h2 {
     margin-bottom: 20px;
     font-weight: bold;
 }
