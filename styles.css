@@ -91,3 +91,11 @@ a {
     margin-bottom: 20px;
     font-weight: bold;
 }
+/* Testimonials */
+.testimonials {
+    background: #ff6f61;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 20px;
+}
