@@ -169,6 +169,7 @@ blockquote {
 .footer h3 {
     margin-bottom: 10px;
     font-size: 1.5em;
+    font-weight: bold;
 }
 
 .footer p {
