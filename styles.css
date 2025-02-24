@@ -35,8 +35,8 @@ a {
     justify-content: center;
     gap: 10px; /* Space between the buttons */
     margin-top: 20px; /* Margin to move the container lower */
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 37%;
+    margin-right: 37%;
 }
 
 .cta {
