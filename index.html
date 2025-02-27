@@ -13,7 +13,7 @@
 <body>
   <!-- Mascot -->
   <div class="mascot" id="mascot">
-    <div class="mascot-message">Hey there! Need help finding your dream car? Let's get you on the road!</div>
+    <div class="mascot-message">Hey there! Need help finding your dream car? Let's get you on the road! -10% first time!</div>
     <img src="mascot.png" alt="Mascot">
   </div>
 
@@ -148,7 +148,14 @@
     document.addEventListener('DOMContentLoaded', function () {
       setTimeout(function() {
           document.getElementById('mascot').classList.add('visible');
-        }, 2000);
+        }, 5000);
+            // Mascot message toggle functionality
+    const mascot = document.querySelector('.mascot');
+    const mascotMessage = document.querySelector('.mascot-message');
+
+    mascot.addEventListener('click', function () {
+      mascotMessage.classList.toggle('visible');
+    });
       // Mobile menu functionality
       const hamburger = document.querySelector('.hamburger');
       const mobileMenu = document.querySelector('.mobile-menu');

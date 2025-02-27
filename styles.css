@@ -384,7 +384,7 @@ blockquote {
 }
 .mascot-message {
     position: absolute;
-    top: -80px;
+    top: -130px;
     right: 0;
     background: #fff;
     padding: 10px;
@@ -408,9 +408,11 @@ blockquote {
     border-top: 10px solid #fff;
 }
 
-.mascot:hover .mascot-message {
+.mascot-message.visible {
     opacity: 1;
+    pointer-events: auto;
 }
+
 .mascot img {
     width: 100%;
     height: auto;
