@@ -1,91 +1,122 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <title>My landing page</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-        <!-- Hero Section -->
-        <header class="hero">
-            <h1>Rent Your Dream Car Today!</h1>
-            <p>Affordable rates, flexible rental options, and a wide selection of vehicles.</p>
-            <div class="cta-container">
-                <a href="#fleet" class="cta">Our Fleet</a>
-                <a href="#rent" class="cta">Rent Now</a>
-            </div>
-        </header>
-        <!-- Unique Value Proposition -->
-        <section class="value-proposition">
-            <h2>Why Choose Us?</h2>
-            <ul>
-                <li>Wide range of cars</li>
-                <li>Affordable rates</li>
-                <li>Easy online booking</li>
-                <li>24/7 customer support</li>
-            </ul>
-        </section>
 
-    <!-- Car Fleet Showcase -->
-    <section id="fleet" class="car-fleet">
-      <h2>Our Car Fleet</h2>
-      <div class="car-grid">
-        <div class="car-card">
-            <img src="https://cimg3.ibsrv.net/ibimg/hgm/1600x900-1/100/561/cadillac-escala-concept_100561247.jpg" alt="Car 1">
-            <h3>Luxury Sedan</h3>
-            <p>From $35/day</p>
-        </div>
-        <div class="car-card">
-            <img src="https://editorial.pxcrush.net/carsales/general/editorial/230404_best_family_suv_skoda_kodiaq_01.jpg?width=1024&height=682" alt="Car 2">
-            <h3>Family SUV</h3>
-            <p>From $50/day</p>
-        </div>
-        <div class="car-card">
-            <img src="https://www.motortrend.com/uploads/sites/5/2020/08/2020-Chevrolet-Sonic-front-three-quarter.jpg?w=768&width=768&q=75&format=webp" alt="Car 3">
-            <h3>Compact Hatchback</h3>
-            <p>From $20/day</p>
-        </div>
-      </div>
-    </section>
-    </section>
-    <div class="cta-container-single">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>My landing page</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <nav class="mobile-nav">
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#fleet">Our Fleet</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Message Us</a>
+      <a href="#rent" >Rent Now</a>
+    </div>
+  </nav>
+  <script>
+    document.getElementById('hamburger').addEventListener('click', function() {
+      this.classList.toggle('active');
+      document.getElementById('mobile-menu').classList.toggle('active');
+    });
+  </script>
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Rent Your Dream Car Today!</h1>
+    <p>Affordable rates, flexible rental options, and a wide selection of vehicles.</p>
+    <div class="cta-container">
+      <a href="#fleet" class="cta">Our Fleet</a>
       <a href="#rent" class="cta">Rent Now</a>
     </div>
-    <!-- Customer Testimonials -->
-    <section class="testimonials">
-      <h2>What Our Customers Say</h2>
-      <div class="testimonial-grid">
-        <div class="testimonial">
-            <img src="https://people.com/thmb/CmROfB5Fw4H3oJmGwr7qJTGDCGg=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(509x0:511x2)/people-headshot-lindsay-kimble-9855440283c440159d1684a4befaa97d.jpg" alt="Sarah L." class="testimonial-img">
-            <blockquote>"Excellent service and great cars!" – Sarah L.</blockquote>
-        </div>
-        <div class="testimonial">
-            <img src="https://people.com/thmb/gzHtG_UnZBsUuHVJx9xjB5yAfIQ=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(399x0:401x2)/people-headshot-nick-maslow-f21ef38676504bc89a091ec9a5c95e4b.jpg" alt="John M." class="testimonial-img">
-            <blockquote>"Affordable prices and easy booking!" – John M.</blockquote>
-        </div>
-      </div>
+  </header>
+  <!-- Unique Value Proposition -->
+  <section class="value-proposition">
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li>Wide range of cars</li>
+      <li>Affordable rates</li>
+      <li>Easy online booking</li>
+      <li>24/7 customer support</li>
+    </ul>
   </section>
-    <!-- Contact Us -->
-  <section class="contact">
-    <h2>Contact Us</h2>
+
+  <!-- Car Fleet Showcase -->
+  <section id="fleet" class="car-fleet">
+    <h2>Our Car Fleet</h2>
+    <div class="car-grid">
+      <div class="car-card">
+        <img src="https://cimg3.ibsrv.net/ibimg/hgm/1600x900-1/100/561/cadillac-escala-concept_100561247.jpg"
+          alt="Car 1">
+        <h3>Luxury Sedan</h3>
+        <p>From $35/day</p>
+      </div>
+      <div class="car-card">
+        <img
+          src="https://editorial.pxcrush.net/carsales/general/editorial/230404_best_family_suv_skoda_kodiaq_01.jpg?width=1024&height=682"
+          alt="Car 2">
+        <h3>Family SUV</h3>
+        <p>From $50/day</p>
+      </div>
+      <div class="car-card">
+        <img
+          src="https://www.motortrend.com/uploads/sites/5/2020/08/2020-Chevrolet-Sonic-front-three-quarter.jpg?w=768&width=768&q=75&format=webp"
+          alt="Car 3">
+        <h3>Compact Hatchback</h3>
+        <p>From $20/day</p>
+      </div>
+    </div>
+  </section>
+  </section>
+  <div class="cta-container-single">
+    <a href="#rent" class="cta">Rent Now</a>
+  </div>
+  <!-- Customer Testimonials -->
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <img
+          src="https://people.com/thmb/CmROfB5Fw4H3oJmGwr7qJTGDCGg=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(509x0:511x2)/people-headshot-lindsay-kimble-9855440283c440159d1684a4befaa97d.jpg"
+          alt="Sarah L." class="testimonial-img">
+        <blockquote>"Excellent service and great cars!" – Sarah L.</blockquote>
+      </div>
+      <div class="testimonial">
+        <img
+          src="https://people.com/thmb/gzHtG_UnZBsUuHVJx9xjB5yAfIQ=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(399x0:401x2)/people-headshot-nick-maslow-f21ef38676504bc89a091ec9a5c95e4b.jpg"
+          alt="John M." class="testimonial-img">
+        <blockquote>"Affordable prices and easy booking!" – John M.</blockquote>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Us -->
+  <section id="contact" class="contact">
+    <h2>Message Us</h2>
     <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
     </form>
   </section>
-    <!-- Footer Section -->
-    <footer class="footer">
-      <div class="footer-content">
-          <h3>Contact Us</h3>
-          <p>Address: 123 Dream Car St, Auto City, CA 12345</p>
-          <p>Phone: (123) 456-7890</p>
-          <p>Email: info@dreamcarrentals.com</p>
-      </div>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <h3>Contact Us</h3>
+      <p>Address: 123 Dream Car St, Auto City, CA 12345</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Email: info@dreamcarrentals.com</p>
+    </div>
   </footer>
-  </body>
+</body>
+
 </html>
