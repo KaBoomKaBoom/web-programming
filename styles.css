@@ -347,6 +347,14 @@ blockquote {
     font-size: 24px;
     margin-bottom: 8px;
 }
+.mobile-quick-actions h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.quick-action span {
+    font-weight: bold; /* Make the text bold */
+}
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .mobile-nav {
