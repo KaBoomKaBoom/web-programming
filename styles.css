@@ -21,10 +21,12 @@ a {
 }
 /* Hero Section */
 .hero {
-    background: url('hero-bg.jpg') no-repeat center top/cover;
+    background: url('hero-bg.jpg') no-repeat right top/cover;
     color: #fff;
     text-align: center;
     padding: 150px 0px;
+    position: relative;
+    background-position: right -200px top; 
 }
 .hero h1 {
     font-size: 3em;
@@ -37,27 +39,30 @@ a {
 .cta-container-single {
     display: flex;
     justify-content: center;
-    margin-left: 40%;
-    margin-right: 40%;
+    margin: 30px auto;
+    max-width: 300px;
 }
 .cta-container {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Space between the buttons */
-    margin-top: 20px; /* Margin to move the container lower */
-    margin-left: 37%;
-    margin-right: 37%;
+    gap: 10px;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cta {
     display: inline-block;
     background: #ff6f61;
-    padding: 20px 20px;
+    padding: 15px 20px;
     border-radius: 5px;
     text-align: center;
     color: #fff;
     text-decoration: none;
-    flex: 1; /* Ensure buttons have the same size */
+    flex: 1;
+    font-weight: bold;
 }
 
 /* Unique Value Proposition */
