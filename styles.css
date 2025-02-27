@@ -355,6 +355,11 @@ blockquote {
 .quick-action span {
     font-weight: bold; /* Make the text bold */
 }
+
+
+
+
+
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .mobile-nav {
