@@ -63,6 +63,10 @@ a {
     text-decoration: none;
     flex: 1;
     font-weight: bold;
+    transition: background 0.3s;
+}
+.cta:hover {
+    background: #e55a4d;
 }
 
 /* Unique Value Proposition */
@@ -76,6 +80,23 @@ a {
     margin-bottom: 20px;
     font-weight: bold;
     font-size: 2em;
+}
+.value-proposition ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.value-proposition li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+    flex: 1 1 200px;
+    min-width: 200px;
 }
 /* Car Fleet Showcase */
 .car-fleet {
