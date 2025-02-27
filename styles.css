@@ -5,16 +5,28 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+*{
+    box-sizing: border-box;
+}
 a {
     text-decoration: none;
     color: #fff;
 }
+/* Responsive layout */
+.car-grid, .testimonial-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 /* Hero Section */
 .hero {
-    background: url('hero-bg.jpg') no-repeat center top/cover;
+    background: url('hero-bg.jpg') no-repeat right top/cover;
     color: #fff;
     text-align: center;
     padding: 150px 0px;
+    position: relative;
+    background-position: right -200px top; 
 }
 .hero h1 {
     font-size: 3em;
@@ -27,27 +39,34 @@ a {
 .cta-container-single {
     display: flex;
     justify-content: center;
-    margin-left: 40%;
-    margin-right: 40%;
+    margin: 30px auto;
+    max-width: 300px;
 }
 .cta-container {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Space between the buttons */
-    margin-top: 20px; /* Margin to move the container lower */
-    margin-left: 37%;
-    margin-right: 37%;
+    gap: 10px;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cta {
     display: inline-block;
     background: #ff6f61;
-    padding: 20px 20px;
+    padding: 15px 20px;
     border-radius: 5px;
     text-align: center;
     color: #fff;
     text-decoration: none;
-    flex: 1; /* Ensure buttons have the same size */
+    flex: 1;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.cta:hover {
+    background: #e55a4d;
 }
 
 /* Unique Value Proposition */
@@ -62,22 +81,44 @@ a {
     font-weight: bold;
     font-size: 2em;
 }
+.value-proposition ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.value-proposition li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+    flex: 1 1 200px;
+    min-width: 200px;
+}
 /* Car Fleet Showcase */
 .car-fleet {
     padding: 50px 20px;
     text-align: center;
 }
 .car-card {
-    display: inline-block;
     width: 300px;
     margin: 10px;
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
+    transition: transform 0.3s;
+}
+.car-card:hover {
+    transform: translateY(-5px);
 }
 .car-card img {
     width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 .car-card h3 {
     padding: 10px;
@@ -87,6 +128,7 @@ a {
     padding: 10px;
     font-size: 0.9em;
     font-weight: bold;
+    color: #ff6f61;
 }
 .car-fleet h2 {
     margin-bottom: 20px;
@@ -99,6 +141,7 @@ a {
     padding: 50px 20px;
     text-align: center;
     margin-top: 20px;
+    background: #f9f9f9;
 }
 
 .testimonial {
@@ -106,6 +149,12 @@ a {
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
 }
 
 .testimonial-img {
@@ -113,11 +162,13 @@ a {
     height: 80px;
     border-radius: 50%;
     margin-right: 20px;
+    object-fit: cover;
 }
 
 blockquote {
     font-size: 1.2em;
     margin: 0;
+    text-align: left;
 }
 .testimonials h2 {
     margin-bottom: 20px;
@@ -136,28 +187,39 @@ blockquote {
 }
 .contact input, .contact textarea, .contact button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+.contact textarea {
+    min-height: 150px;
+    resize: vertical;
 }
 .contact button {
     background: #ff6f61;
     color: #fff;
     cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+    border: none;
+}
+
+.contact button:hover {
+    background: #e55a4d;
 }
 .contact h2 {
     margin-bottom: 20px;
     font-weight: bold;
     font-size: 2em;
 }
+/* Footer */
 .footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
+    padding: 30px 20px;
     width: 100%;
 }
 
@@ -167,12 +229,71 @@ blockquote {
 }
 
 .footer h3 {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 1.5em;
     font-weight: bold;
 }
 
 .footer p {
-    margin: 5px 0;
+    margin: 8px 0;
     font-size: 1em;
 }
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: 250px 20px 60px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+        margin-top: 100px;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .cta-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .cta {
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+
+    .cta-container-single {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .value-proposition ul {
+        gap: 10px;
+    }
+
+    .value-proposition li {
+        width: 100%;
+    }
+
+    .car-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .testimonial {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonial-img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    blockquote {
+        text-align: center;
+        font-size: 1.1em;
+    }
+}
+
