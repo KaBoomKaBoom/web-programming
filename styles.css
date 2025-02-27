@@ -417,9 +417,6 @@ blockquote {
     object-fit: cover;
     border-radius: 50%;
 }
-
-
-
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .mobile-nav {
