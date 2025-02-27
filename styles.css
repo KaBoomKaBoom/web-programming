@@ -356,7 +356,67 @@ blockquote {
     font-weight: bold; /* Make the text bold */
 }
 
+/* Mascot */
+.mascot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 1s, transform 0.5s;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+}
 
+.mascot.visible {
+    opacity: 1;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-10px) rotate(5deg);
+    }
+}
+.mascot-message {
+    position: absolute;
+    top: -80px;
+    right: 0;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.mascot-message:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+}
+
+.mascot:hover .mascot-message {
+    opacity: 1;
+}
+.mascot img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
 
 
 
