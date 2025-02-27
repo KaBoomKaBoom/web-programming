@@ -5,9 +5,19 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+*{
+    box-sizing: border-box;
+}
 a {
     text-decoration: none;
     color: #fff;
+}
+/* Responsive layout */
+.car-grid, .testimonial-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 /* Hero Section */
 .hero {
