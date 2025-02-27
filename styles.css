@@ -238,68 +238,9 @@ blockquote {
     margin: 8px 0;
     font-size: 1em;
 }
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    .hero {
-        padding: 250px 20px 60px;
-    }
-
-    .hero h1 {
-        font-size: 2em;
-        margin-top: 100px;
-    }
-
-    .hero p {
-        font-size: 1em;
-    }
-
-    .cta-container {
-        flex-direction: column;
-        width: 90%;
-    }
-
-    .cta {
-        padding: 15px;
-        margin-bottom: 10px;
-    }
-
-    .cta-container-single {
-        flex-direction: column;
-        width: 90%;
-    }
-
-    .value-proposition ul {
-        gap: 10px;
-    }
-
-    .value-proposition li {
-        width: 100%;
-    }
-
-    .car-card {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .testimonial {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .testimonial-img {
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
-
-    blockquote {
-        text-align: center;
-        font-size: 1.1em;
-    }
-}
-
 /* Mobile Navigation */
 .mobile-nav {
-    display: flex;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -376,4 +317,103 @@ blockquote {
     text-align: center;
     border-radius: 5px;
     border-bottom: none;
+}
+/* Mobile Only Quick Actions */
+.mobile-quick-actions {
+    display: none;
+    background: #f4f4f9;
+    padding: 20px;
+    text-align: center;
+}
+.quick-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.quick-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.quick-action .icon {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .mobile-nav {
+        display: block;
+    }
+
+    .mobile-quick-actions {
+        display: block;
+    }
+    .hero {
+        padding: 250px 20px 60px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+        margin-top: 100px;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .cta-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .cta {
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+
+    .cta-container-single {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .value-proposition ul {
+        gap: 10px;
+    }
+
+    .value-proposition li {
+        width: 100%;
+    }
+
+    .car-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .testimonial {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonial-img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    blockquote {
+        text-align: center;
+        font-size: 1.1em;
+    }
+}
+@media (min-width: 769px) {
+    .mobile-quick-actions {
+        display: none;
+    }
 }

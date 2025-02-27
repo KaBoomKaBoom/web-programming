@@ -24,13 +24,6 @@
       <a href="#rent">Rent Now</a>
     </div>
   </nav>
-  <script>
-    document.getElementById('hamburger').addEventListener('click', function () {
-      this.classList.toggle('active');
-      document.getElementById('mobile-menu').classList.toggle('active');
-    });
-  </script>
-  
   <section class="mobile-quick-actions">
     <h2>Quick Actions</h2>
     <div class="quick-actions-grid">
@@ -140,6 +133,20 @@
       <p>Email: info@dreamcarrentals.com</p>
     </div>
   </footer>
+  <!-- Script for mascot animation and mobile menu -->
+  <script>
+    // Mascot functionality
+    document.addEventListener('DOMContentLoaded', function () {
+      // Mobile menu functionality
+      const hamburger = document.querySelector('.hamburger');
+      const mobileMenu = document.querySelector('.mobile-menu');
+
+      hamburger.addEventListener('click', function () {
+        this.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
 
 </html>
