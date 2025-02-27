@@ -308,12 +308,14 @@ blockquote {
     z-index: 1000;
     padding: 15px;
 }
+
 .hamburger {
     cursor: pointer;
     width: 30px;
     height: 20px;
     position: relative;
 }
+
 .hamburger span {
     display: block;
     position: absolute;

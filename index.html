@@ -12,18 +12,24 @@
 
 <body>
   <nav class="mobile-nav">
-    <div class="hamburger">
+    <div class="hamburger" id="hamburger">
       <span></span>
       <span></span>
       <span></span>
     </div>
-    <div class="mobile-menu">
+    <div class="mobile-menu" id="mobile-menu">
       <a href="#fleet">Our Fleet</a>
       <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Contact Us</a>
-      <a href="#rent" class="mobile-cta">Rent Now</a>
+      <a href="#contact">Message Us</a>
+      <a href="#rent" >Rent Now</a>
     </div>
   </nav>
+  <script>
+    document.getElementById('hamburger').addEventListener('click', function() {
+      this.classList.toggle('active');
+      document.getElementById('mobile-menu').classList.toggle('active');
+    });
+  </script>
   <!-- Hero Section -->
   <header class="hero">
     <h1>Rent Your Dream Car Today!</h1>
@@ -75,7 +81,7 @@
     <a href="#rent" class="cta">Rent Now</a>
   </div>
   <!-- Customer Testimonials -->
-  <section class="testimonials">
+  <section id="testimonials" class="testimonials">
     <h2>What Our Customers Say</h2>
     <div class="testimonial-grid">
       <div class="testimonial">
@@ -93,8 +99,8 @@
     </div>
   </section>
   <!-- Contact Us -->
-  <section class="contact">
-    <h2>Contact Us</h2>
+  <section id="contact" class="contact">
+    <h2>Message Us</h2>
     <form>
       <input type="text" placeholder="Your Name" required>
       <input type="email" placeholder="Your Email" required>
