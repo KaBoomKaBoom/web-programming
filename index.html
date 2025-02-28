@@ -13,36 +13,38 @@
 <body>
   <!-- Mascot -->
   <div class="mascot" id="mascot">
-    <div class="mascot-message">Hey there! Need help finding your dream car? Let's get you on the road! -10% first time!</div>
+    <div class="mascot-message">Hey there! Need help finding your dream car? Let's get you on the road! -10% first time!
+    </div>
     <img src="mascot.png" alt="Mascot">
   </div>
-  <!-- Mobile Navigation -->
+
+  <!-- Mobile Nav Menu -->
   <nav class="mobile-nav">
-    <div class="hamburger" id="hamburger">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
       <span></span>
       <span></span>
       <span></span>
-    </div>
-    <div class="mobile-menu" id="mobile-menu">
-      <a href="#home">Home</a>
+    </label>
+    <div class="mobile-menu">
       <a href="#fleet">Our Fleet</a>
       <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Message Us</a>
+      <a href="#contact">Contact Us</a>
       <a href="#rent" class="mobile-cta">Rent Now</a>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <header id="home" class="hero">
+  <header class="hero">
     <h1>Rent Your Dream Car Today!</h1>
     <p>Affordable rates, flexible rental options, and a wide selection of vehicles.</p>
     <div class="cta-container">
-      <a href="#fleet" class="cta">Our Fleet</a>
+      <a href="#fleet" class="cta">Explore Our Fleet</a>
       <a href="#rent" class="cta">Rent Now</a>
     </div>
   </header>
 
-  <!-- Quick Actions Section (mobile only)-->`
+  <!-- Mobile-only Quick Actions -->
   <section class="mobile-quick-actions">
     <h2>Quick Actions</h2>
     <div class="quick-actions-grid">
@@ -64,6 +66,7 @@
       </a>
     </div>
   </section>
+
   <!-- Unique Value Proposition -->
   <section class="value-proposition">
     <h2>Why Choose Us?</h2>
@@ -100,11 +103,11 @@
         <p>From $20/day</p>
       </div>
     </div>
+    <div class="cta-container-single">
+      <a href="#rent" class="cta" id="rent">Rent Now</a>
+    </div>
   </section>
-  </section>
-  <div class="cta-container-single">
-    <a href="#rent" class="cta">Rent Now</a>
-  </div>
+
   <!-- Customer Testimonials -->
   <section id="testimonials" class="testimonials">
     <h2>What Our Customers Say</h2>
@@ -123,9 +126,10 @@
       </div>
     </div>
   </section>
+
   <!-- Contact Us -->
   <section id="contact" class="contact">
-    <h2>Message Us</h2>
+    <h2>Contact Us</h2>
     <form>
       <input type="text" placeholder="Your Name" required>
       <input type="email" placeholder="Your Email" required>
@@ -133,6 +137,7 @@
       <button type="submit">Send Message</button>
     </form>
   </section>
+
   <!-- Footer Section -->
   <footer class="footer">
     <div class="footer-content">
@@ -142,30 +147,6 @@
       <p>Email: info@dreamcarrentals.com</p>
     </div>
   </footer>
-  <!-- Script for mascot animation and mobile menu -->
-  <script>
-    // Mascot functionality
-    document.addEventListener('DOMContentLoaded', function () {
-      setTimeout(function() {
-          document.getElementById('mascot').classList.add('visible');
-        }, 5000);
-            // Mascot message toggle functionality
-    const mascot = document.querySelector('.mascot');
-    const mascotMessage = document.querySelector('.mascot-message');
-
-    mascot.addEventListener('click', function () {
-      mascotMessage.classList.toggle('visible');
-    });
-      // Mobile menu functionality
-      const hamburger = document.querySelector('.hamburger');
-      const mobileMenu = document.querySelector('.mobile-menu');
-
-      hamburger.addEventListener('click', function () {
-        this.classList.toggle('active');
-        mobileMenu.classList.toggle('active');
-      });
-    });
-  </script>
 </body>
 
 </html>
