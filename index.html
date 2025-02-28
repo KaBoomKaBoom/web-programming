@@ -11,6 +11,12 @@
 </head>
 
 <body>
+  <!-- Mascot -->
+  <div class="mascot" id="mascot">
+    <div class="mascot-message">Hey there! Need help finding your dream car? Let's get you on the road! -10% first time!</div>
+    <img src="mascot.png" alt="Mascot">
+  </div>
+
   <nav class="mobile-nav">
     <div class="hamburger" id="hamburger">
       <span></span>
@@ -25,7 +31,7 @@
       <a href="#rent">Rent Now</a>
     </div>
   </nav>
-  
+
   <!-- Hero Section -->
   <header id="home" class="hero">
     <h1>Rent Your Dream Car Today!</h1>
@@ -140,6 +146,16 @@
   <script>
     // Mascot functionality
     document.addEventListener('DOMContentLoaded', function () {
+      setTimeout(function() {
+          document.getElementById('mascot').classList.add('visible');
+        }, 5000);
+            // Mascot message toggle functionality
+    const mascot = document.querySelector('.mascot');
+    const mascotMessage = document.querySelector('.mascot-message');
+
+    mascot.addEventListener('click', function () {
+      mascotMessage.classList.toggle('visible');
+    });
       // Mobile menu functionality
       const hamburger = document.querySelector('.hamburger');
       const mobileMenu = document.querySelector('.mobile-menu');
