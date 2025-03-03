@@ -28,7 +28,7 @@ Welcome to the **Dream Car Rentals** landing page! This page allows users to exp
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/KaBoomKaBoom/Lab2-LandingPage.git
+   git clone https://github.com/KaBoomKaBoom/web-programming.git
    ```
 2. Open the project in your preferred code editor (e.g., VSCode, Sublime Text, etc.).
 
@@ -57,25 +57,30 @@ Lab2-LandingPage/
 
 You can watch a demo of the Dream Car Rentals landing page in action here:
 
-[Lab2-LandingPage Demo on YouTube](https://youtu.be/HGrmI6VUFs8)
+[Responsive Landing Page Demo on YouTube](https://youtu.be/E0-d4O0oa8U)
 
 ## Screenshots
 
 Here are some screenshots showcasing the landing page:
 
-- **Hero Section**  
+- **Hero Section** 
+
     ![Hero Section](image.png)
 
 - **Car Fleet Showcase**  
+
     ![Car Fleet](image-1.png)
 
 - **Contact Form**  
+
   ![Contact Form](image-2.png)
 
 - **Mobile menu**
+
   ![Mobile Menu](image-3.png)
 
 - **Mobile only quick-actions menu**
+
   ![Quick actions menu](image-4.png)
 
 - **Mascot**
@@ -86,7 +91,7 @@ Here are some screenshots showcasing the landing page:
 
 The landing page is deployed and available on GitHub Pages. You can view the live demo here:
 
-[Lab2-LandingPage - GitHub Pages](https://kaboomkaboom.github.io/web-programming/)
+[Responsive Landing Page - GitHub Pages](https://kaboomkaboom.github.io/web-programming/)
 
 ## Credits
 
