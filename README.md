@@ -7,6 +7,7 @@ Welcome to the **Dream Car Rentals** landing page! This page allows users to exp
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Tailwind CSS](#tailwind-css)
 - [Folder Structure](#folder-structure)
 - [Demo](#demo)
 - [Screenshots](#screenshots)
@@ -40,6 +41,39 @@ Welcome to the **Dream Car Rentals** landing page! This page allows users to exp
 - The “Explore Our Fleet” and “Rent Now” buttons take users to the respective sections on the page for a seamless browsing experience.
 - The mobile navigation menu can be toggled by clicking the hamburger icon.
 - The mascot displays a helpful message when clicked on mobile version and hovered on desktop version.
+
+## Tailwind CSS
+
+This project leverages Tailwind CSS for rapid and responsive styling:
+
+### Key Tailwind Features Used
+
+- **Responsive Design**: Utility classes like `md:w-1/4` for responsive layouts
+- **Flexbox and Grid**: `flex`, `flex-wrap`, `justify-center` for flexible layouts
+- **Spacing and Sizing**: `py-16`, `px-4`, `mt-8` for precise spacing
+- **Typography**: `text-3xl`, `font-semibold` for consistent text styling
+- **Background and Color**: `bg-white`, `text-deep-orange-300` for custom colors
+- **Hover States**: `hover:bg-background-hover` for interactive elements
+- **Custom Color Configuration**: Extended Tailwind's color palette with custom colors
+
+### Tailwind Configuration
+
+The project includes a custom Tailwind configuration in the `<script>` tag:
+
+```javascript
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        'deep-orange-300': '#ff6f61',
+        'background-hover': '#e55a4d'
+      },
+    },
+  },
+}
+```
+
+This allows for custom color definitions that can be used throughout the project.
 
 ## Folder Structure
 
@@ -97,3 +131,4 @@ The landing page is deployed and available on GitHub Pages. You can view the liv
 
 - The fonts are imported from Google Fonts: [Open Sans](https://fonts.google.com/specimen/Open+Sans).
 - All images used are free-to-use images from the internet.
+- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework.
