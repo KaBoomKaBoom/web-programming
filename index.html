@@ -9,6 +9,18 @@
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="styles.css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'deep-orange-300': '#ff6f61', // Add your custom color here
+            'background-hover': '#e55a4d'
+          },
+        },
+      },
+    }
+  </script>
 </head>
 
 <body>
@@ -37,12 +49,12 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="hero bg-[url('hero-bg.jpg')] bg-cover bg-center text-white text-center py-20 px-4" id="home">
-    <h1 class="text-4xl font-bold">Rent Your Dream Car Today!</h1>
-    <p class="mt-4 text-lg">Affordable rates, flexible rental options, and a wide selection of vehicles.</p>
-    <div class="mt-6 flex justify-center gap-4">
-      <a href="#fleet" class="bg-white text-blue-600 font-semibold py-2 px-6 rounded-lg shadow hover:bg-gray-200">Explore Our Fleet</a>
-      <a href="#rent" class="bg-yellow-500 text-white font-semibold py-2 px-6 rounded-lg shadow hover:bg-yellow-600">Rent Now</a>
+  <header class="hero bg-[url('hero-bg.jpg')] bg-no-repeat bg-right-top bg-cover text-white text-center py-36 px-4 relative" id="home">
+    <h1 class="text-3xl mt-80">Rent Your Dream Car Today!</h1>
+    <p class="text-xl mt-5 mb-5">Affordable rates, flexible rental options, and a wide selection of vehicles.</p>
+    <div class="mt-6 flex justify-center gap-5">
+      <a href="#fleet" class="w-60 bg-deep-orange-300 text-white font-semibold py-4 px-8 rounded-lg shadow hover:bg-background-hover">Explore Our Fleet</a>
+      <a href="#rent" class="w-60 bg-deep-orange-300 text-white font-semibold py-4 px-8 rounded-lg shadow hover:bg-background-hover ">Rent Now</a>
     </div>
   </header>
 
