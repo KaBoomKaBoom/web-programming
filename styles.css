@@ -140,26 +140,6 @@ a {
     margin-bottom: 8px;
 }
 
-/* Hero Section */
-.hero {
-    background: url('hero-bg.jpg') no-repeat right top/cover;
-    color: #fff;
-    text-align: center;
-    padding: 150px 0px;
-    position: relative;
-    background-position: right -200px top; 
-}
-
-.hero h1 {
-    font-size: 3em;
-    margin-top: 350px;
-}
-
-.hero p {
-    font-size: 1.2em;
-    margin: 20px 0;
-}
-
 .cta-container-single {
     display: flex;
     justify-content: center;
