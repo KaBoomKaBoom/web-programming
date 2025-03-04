@@ -49,12 +49,18 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="hero bg-[url('hero-bg.jpg')] bg-no-repeat bg-right-top bg-cover text-white text-center py-36 px-4 relative" id="home">
+  <header
+    class="hero bg-[url('hero-bg.jpg')] bg-no-repeat bg-right-top bg-cover text-white text-center py-36 px-4 relative"
+    id="home">
     <h1 class="text-3xl mt-80">Rent Your Dream Car Today!</h1>
     <p class="text-xl mt-5 mb-5">Affordable rates, flexible rental options, and a wide selection of vehicles.</p>
     <div class="mt-6 flex justify-center gap-5">
-      <a href="#fleet" class="w-60 bg-deep-orange-300 text-white font-semibold py-4 px-8 rounded-lg shadow hover:bg-background-hover">Explore Our Fleet</a>
-      <a href="#rent" class="w-60 bg-deep-orange-300 text-white font-semibold py-4 px-8 rounded-lg shadow hover:bg-background-hover ">Rent Now</a>
+      <a href="#fleet"
+        class="w-60 bg-deep-orange-300 text-white font-semibold py-4 px-8 rounded-lg shadow hover:bg-background-hover">Explore
+        Our Fleet</a>
+      <a href="#rent"
+        class="w-60 bg-deep-orange-300 text-white font-semibold py-4 px-8 rounded-lg shadow hover:bg-background-hover ">Rent
+        Now</a>
     </div>
   </header>
 
@@ -93,74 +99,76 @@
   </section>
 
   <!-- Car Fleet Showcase -->
-  <section id="fleet" class="car-fleet">
-    <h2>Our Car Fleet</h2>
-    <div class="car-grid">
-      <div class="car-card">
-        <img src="https://cimg3.ibsrv.net/ibimg/hgm/1600x900-1/100/561/cadillac-escala-concept_100561247.jpg"
-          alt="Car 1">
-        <h3>Luxury Sedan</h3>
-        <p>From $35/day</p>
+  <section id="fleet" class="py-16 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold">Our Car Fleet</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md car-card">
+          <img src="https://cimg3.ibsrv.net/ibimg/hgm/1600x900-1/100/561/cadillac-escala-concept_100561247.jpg"
+            alt="Car 1" class="w-full rounded-md ">
+          <h3 class="text-xl font-semibold mt-4">Luxury Sedan</h3>
+          <p class="text-deep-orange-300 font-bold">From $35/day</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md car-card">
+          <img
+            src="https://editorial.pxcrush.net/carsales/general/editorial/230404_best_family_suv_skoda_kodiaq_01.jpg?width=1024&height=682"
+            alt="Car 2" class="w-full rounded-md">
+          <h3 class="text-xl font-semibold mt-4">Family SUV</h3>
+          <p class="text-deep-orange-300 font-bold">From $50/day</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md car-card">
+          <img
+            src="https://www.motortrend.com/uploads/sites/5/2020/08/2020-Chevrolet-Sonic-front-three-quarter.jpg?w=768&width=768&q=75&format=webp"
+            alt="Car 3" class="w-full rounded-md">
+          <h3 class="text-xl font-semibold mt-4">Compact Hatchback</h3>
+          <p class="text-deep-orange-300 font-bold">From $20/day</p>
+        </div>
       </div>
-      <div class="car-card">
-        <img
-          src="https://editorial.pxcrush.net/carsales/general/editorial/230404_best_family_suv_skoda_kodiaq_01.jpg?width=1024&height=682"
-          alt="Car 2">
-        <h3>Family SUV</h3>
-        <p>From $50/day</p>
-      </div>
-      <div class="car-card">
-        <img
-          src="https://www.motortrend.com/uploads/sites/5/2020/08/2020-Chevrolet-Sonic-front-three-quarter.jpg?w=768&width=768&q=75&format=webp"
-          alt="Car 3">
-        <h3>Compact Hatchback</h3>
-        <p>From $20/day</p>
+      <div class="mt-6">
+        <a href="#rent" class="w-60 py-3 px-6 bg-deep-orange-300 text-white font-semibold  rounded-lg shadow hover:bg-background-hover">Rent
+          Now</a>
       </div>
     </div>
-    <div class="cta-container-single">
-      <a href="#rent" class="cta" id="rent">Rent Now</a>
-    </div>
-  </section>
 
-  <!-- Customer Testimonials -->
-  <section id="testimonials" class="testimonials">
-    <h2>What Our Customers Say</h2>
-    <div class="testimonial-grid">
-      <div class="testimonial">
-        <img
-          src="https://people.com/thmb/CmROfB5Fw4H3oJmGwr7qJTGDCGg=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(509x0:511x2)/people-headshot-lindsay-kimble-9855440283c440159d1684a4befaa97d.jpg"
-          alt="Sarah L." class="testimonial-img">
-        <blockquote>"Excellent service and great cars!" – Sarah L.</blockquote>
+    <!-- Customer Testimonials -->
+    <section id="testimonials" class="testimonials">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <img
+            src="https://people.com/thmb/CmROfB5Fw4H3oJmGwr7qJTGDCGg=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(509x0:511x2)/people-headshot-lindsay-kimble-9855440283c440159d1684a4befaa97d.jpg"
+            alt="Sarah L." class="testimonial-img">
+          <blockquote>"Excellent service and great cars!" – Sarah L.</blockquote>
+        </div>
+        <div class="testimonial">
+          <img
+            src="https://people.com/thmb/gzHtG_UnZBsUuHVJx9xjB5yAfIQ=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(399x0:401x2)/people-headshot-nick-maslow-f21ef38676504bc89a091ec9a5c95e4b.jpg"
+            alt="John M." class="testimonial-img">
+          <blockquote>"Affordable prices and easy booking!" – John M.</blockquote>
+        </div>
       </div>
-      <div class="testimonial">
-        <img
-          src="https://people.com/thmb/gzHtG_UnZBsUuHVJx9xjB5yAfIQ=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(399x0:401x2)/people-headshot-nick-maslow-f21ef38676504bc89a091ec9a5c95e4b.jpg"
-          alt="John M." class="testimonial-img">
-        <blockquote>"Affordable prices and easy booking!" – John M.</blockquote>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-content">
+        <h3>Contact Us</h3>
+        <p>Address: 123 Dream Car St, Auto City, CA 12345</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: info@dreamcarrentals.com</p>
       </div>
-    </div>
-  </section>
-
-  <!-- Contact Us -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <!-- Footer Section -->
-  <footer class="footer">
-    <div class="footer-content">
-      <h3>Contact Us</h3>
-      <p>Address: 123 Dream Car St, Auto City, CA 12345</p>
-      <p>Phone: (123) 456-7890</p>
-      <p>Email: info@dreamcarrentals.com</p>
-    </div>
-  </footer>
+    </footer>
 </body>
 
 </html>
